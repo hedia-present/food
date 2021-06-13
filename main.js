@@ -60,10 +60,7 @@ function validate(){
 		check=false;
 	}
 	return check;
-
 	
-	
-		
 }
 	 
 
