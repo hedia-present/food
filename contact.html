@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+        <style>
+            ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+      background-color: rgba(128, 128, 128, 0.377);
+   
+    top: 0;
+    width: 100%;
+  }
+  ul.sidenav li {
+    float: left;
+  }
+  ul.sidenav li a {
+    display:block;
+     color:black;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+   }
+   
+   ul.sidenav li a:hover {
+        background-color:white;
+   }
+   .sidenav {display:flex;
+    flex-direction: row;}
+   @media (max-width: 800px) {
+     .sidenav {
+       flex-direction: column;
+       text-align:center;
+      }
+   }
+        </style>
+    </head>
+    <body>
+        <div class="ahh">
+            <header>
+                <ul class="sidenav">
+                    <li><a  href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="expert.html">expert</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+                  </ul>
+                </header> 
+                <div class="container">
+                    <div class="form">
+                       
+                        <form class="form-form" id="contactForm" onsubmit="return validation()" autocomplete="on" action="npage.html " method="post" >
+                            <div class="input">
+                                <input type="text" class="input-field" name="first-name"  id="custname" />
+                                <label class="input-label">First name</label>
+                            </div>
+                            <div class="input">
+                                <input type="text" class="input-field" name="last-name" id="lname" />
+                                <label class="input-label">Last name</label>
+                            </div>
+                            <div class="input">
+                                <input type="test" class="input-field" name="Email" placeholder="vlockn@gmail.com" id="email" />
+                                <label class="input-label">Email</label>
+                            </div>
+                            <div class="input">
+                                <input type="password" name="password" id="password" class="input-field" />
+                                <label class="input-label">Password</label>
+                            </div>
+                            <div class="input">
+                                <input type="text" name="telephone" class="input-field" id="telephone" />
+                                <label class="input-label">Telephone </label>
+                            </div>
+                            <div class="input">
+                                <input type="text" class="input-field" name="address"  />
+                                <label class="input-label">Address</label>
+                            </div>
+                            <div class="input">
+                                <select name="gender" id="gender" class="input-field">
+                                        <option value="male" selected>male</option>
+                                        <option value="female">female</option>
+                                </select>
+                                <label class="input-label">Gender </label>
+                            </div>
+                            <div class="input">
+                                <select name="plane" id="plane" class="input-field">
+                                        <option value="male" selected>Free</option>
+                                        <option value="female">Premium</option>
+                                        <option value="female">Platinum</option>
+                                </select>
+                                
+                            </div>
+                            <div class="action">
+                                <input name="submit"  type="submit" class="action-button" value="Get started">
+                            </div>
+                        </form>
+                </div>
+                </div>
+    </body>
+</html>

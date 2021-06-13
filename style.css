@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+
+.container1 {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container1 {
+    width: 750px;
+  }
+}
+/* medium */
+@media (min-width: 992px) {
+  .container1 {
+    width: 970px;
+  }
+}
+/* large */
+@media (min-width: 1200px) {
+  .container1 {
+    width: 1170px;
+  }
+}
+.about {
+  padding-top: 15px;
+  padding-bottom: 75px;
+}
+.about .about-content {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .about .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.about .about-content .imgg {
+  position: relative;
+  width: 300px;
+  height: 350px;
+}
+@media (max-width: 991px) {
+  .about .about-content .imgg {
+    margin: 0 auto 60px;
+  }
+}
+.about .about-content .imgg img {
+  max-width: 100%;
+}
+.about .about-content .text {
+  flex-basis: calc(100% - 500px);
+}
+.about .about-content .imgg::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(152, 152, 235);
+  width: 100px;
+  height: calc(100% + 100px);
+  top: -30px;
+  left: -20px;
+  z-index: -1;
+}
+
+@media (max-width: 991px) {
+  .about .about-content .imgg::before {
+    display: none;
+  }
+}
+
+.text h1 {
+  font-size: 50px;
+  color: palevioletred;
+}
+.text p {
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+.text {
+  padding: 0 80px 80px 80px;
+}
+/*.text .te {
+  padding-top: 10px;
+}*/
+button {
+  height: 50px;
+  margin-left: 400px;
+}
+button a {
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(194, 211, 214);
+}
+h1 .tex {
+  color: rgb(196, 53, 53);
+  font-size: 35px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.cont {
+  text-align: center;
+}
+.cont p {
+  font-size: 20px;
+}
+div.megallery {
+  margin: 40px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 250px;
+  height: 450px;
+}
+
+div.megallery:hover {
+  border: 1px solid #777;
+}
+
+div.megallery img {
+  width: 100%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+}
+
+div.chef {
+  margin: 40px;
+
+  float: left;
+  width: 250px;
+  height: 450px;
+}
+div.chef img {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10ex;
+}
+.texex {
+  text-align: center;
+  font-size: 21px;
+  margin-top: 30px;
+}
+.texex h1 {
+  font-size: 30px;
+  color: red;
+} 
+table tr  th {
+  border: 3px solid rgb(139, 132, 119);
+
+}
+
+.all {
+  background-color: rgb(187, 180, 180);
+  margin: 20px 150px ;
+  border-collapse: collapse;
+}
+.chef p{
+  font-size: 22px;
+}
+@media screen and (max-width: 800px) {
+  
+.all{
+  width: 90%;
+  margin: 0 15px;
+  float: left;
+  text-align: left;
+} 
+
+.all th{
+  display: block;
+}}
+.all p {
+  text-align: center;
+}
+
+body {
+  line-height: 1.5;
+  padding: 0;
+  background-color: #eee;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input {
+  appearance: none;
+  border-radius: 0;
+}
+
+.form {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 425px;
+  background-color: rgb(167, 89, 89);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px 0 rgba(#999, 0.25);
+  padding: 0.75rem;
+}
+
+.form-form {
+  padding: 2rem 1rem 0;
+}
+
+.input {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  padding-top: 1.5rem;
+  font-size: 22px;
+}
+
+.input-label {
+  color: white;
+}
+
+.input-field {
+  border: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid #eee;
+  font: inherit;
+  font-size: 1.125rem;
+  padding: 0.25rem 0;
+}
+
+.action {
+  margin-top: 2rem;
+}
+
+.action-button {
+  font: inherit;
+  font-size: 1.25rem;
+  padding: 1em;
+  width: 100%;
+  font-weight: 500;
+  background-color: rgb(177, 95, 95);
+  border-radius: 6px;
+  color: #fff;
+  border: 0;
+}
+
+
+@media screen and (max-width: 800px) {
+  .megallery {
+    
+    width: 100%;
+    margin-left: 40px;
+    text-align:  left;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  button,
+  a {
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin: 0;
+  }
+}

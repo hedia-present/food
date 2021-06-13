@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        
+        <style>
+          *{
+            margin: 0;
+             padding: 0;
+
+              box-sizing: border-box;
+}
+          body{
+                    min-height: 150vh;
+          width: 100%;
+          background-image: linear-gradient(
+              rgba(30, 4, 4, 0.445),
+              rgba(30, 4, 4, 0.445)
+            ),
+            url("img30.jpg");
+          background-size: cover;
+          background-position: center;
+        }
+          
+         .go {
+            width: 100%;
+            text-align: center;
+            color: white;
+            transform: translateY(-50%);
+            top: 50%;
+            position: absolute;
+          }
+          .go h1 {
+            font-weight: 200px;
+            font-size: 90px;
+          }
+          .go h2 {
+            font-weight: 300px;
+            font-size: 50px;
+          }
+          .go p {
+            font-size: 25px;
+          }
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        li {
+          float: left;
+        }
+        ul.sidenav {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+            background-color: rgba(128, 128, 128, 0.377);
+         
+          top: 0;
+          width: 100%;
+        }
+        
+        ul.sidenav li {
+          float: left;
+        }
+        
+        ul.sidenav li a {
+         display:block;
+          color:black;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        ul.sidenav li a:hover {
+             background-color:white;
+        }
+        .sidenav {display:flex;
+         flex-direction: row;}
+        @media (max-width: 800px) {
+          .sidenav {
+            flex-direction: column;
+            text-align:center;
+           }
+        }
+        @media screen and (max-width: 800px) {
+  .go{
+    margin-top: 130px;
+  }
+  }
+
+
+        </style>
+    
+      </head>
+      <body>
+      
+         <header >
+        <ul class="sidenav">
+     
+          <li><a  href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="expert.html">expert</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          
+          </ul>
+        </header>   
+      
+       <div class="go">
+           <h1>DESSERTS </h1>
+           <h2>IS THE FRIST STEP TO GOOD DAY</h2>
+           <p>
+            If you have a sweet tooth, no meal is complete without dessert.
+             Whether it's chocolates, cake or ice cream,
+              dessert is often the most memorable part of the meal 
+              because it's the last thing you remember eating
+           </p>
+       </div>
+  
+   
+    </body>
+</html>
