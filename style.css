@@ -53,8 +53,13 @@
 @media (max-width: 991px) {
   .about .about-content .imgg {
     margin: 0 auto 60px;
-     margin-left: 0;
   }
+  .about .about-content .text p{
+float: left;
+  }
+  .about .about-content .text h1{
+    float: left;
+      }
 }
 .about .about-content .imgg img {
   max-width: 100%;
