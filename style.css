@@ -39,7 +39,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-@media (max-width: 991px) {
+@media (max-width: 800px) {
   .about .about-content {
     flex-direction: column;
     text-align: center;
@@ -50,7 +50,7 @@
   width: 300px;
   height: 350px;
 }
-@media (max-width: 991px) {
+@media (max-width: 800px) {
   .about .about-content .imgg {
     margin: 0 auto 60px;
   }
